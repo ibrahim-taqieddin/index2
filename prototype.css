@@ -5,8 +5,10 @@
     height: 700px;
 } */
 body{
+    text-transform: capitalize;
     background-color: rgb(37, 66, 66);
     scroll-behavior: smooth;
+
 }
  header ul{text-align: end;
     list-style: none;
@@ -30,7 +32,8 @@ h{
     position: relative;
 }  */
 .card{
-    display: inline-;
+    justify-items: center;
+    /* display: inline-; */
     font-size: larger;
     color: brown;
     border: 0rem;
@@ -48,9 +51,14 @@ h{
 .card1{
    justify-items: center;
     width: 400px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 
 .foot:hover{
      transform: scale(1.9);
+}
+
+.foot a  {
+    display: inline-block;
+    margin: 35px;
 }
