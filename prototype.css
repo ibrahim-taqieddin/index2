@@ -55,7 +55,7 @@ h{
 }
 
 .foot a{
-  transition: all 1s linear;
+  transition: all 0.25s linear;
 }
 
 .foot a:hover{
