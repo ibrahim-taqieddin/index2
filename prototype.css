@@ -54,11 +54,95 @@ h{
     /* margin-left: 120px; */
 }
 
-.foot:hover{
-     transform: scale(1.9);
+.foot a{
+  transition: all 1s linear;
 }
 
+.foot a:hover{
+     transform: scale(1.5);
+}
+
+
+
+  
 .foot a  {
     display: inline-block;
     margin: 35px;
+}
+
+
+
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  .del0{
+    animation-duration: 10s;
+    /* animation-delay: */
+  }
+
+  .del1{
+    animation-duration: 10s;
+    animation-delay:2s; 
+  }
+
+  .del2{
+    animation-duration: 10s;
+    animation-delay: 3s;
+  }
+
+  .del3{
+    animation-duration: 10s;
+    animation-delay: 6s;
+  }
+
+  .del4{
+    animation-duration: 10s;
+    animation-delay: 6s ;
+  }
+ 
+
+
+  .trans1 > div p{
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+    color:black;
+    display: none;
+    font-size: 30px;
+  }
+  
+  /* .trans1 > div{
+    transition: all 0.5s ease-in-out;
+  } */
+  
+  .trans1 > div:hover p{
+    display: block;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .trans1 > div:hover a{
+     opacity: 0.2;
+     transition: all 0.5s ease-in-out;
 }
